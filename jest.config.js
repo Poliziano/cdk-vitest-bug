@@ -1,8 +1,12 @@
+/*
+ * For a detailed explanation regarding each configuration property, visit:
+ * https://jestjs.io/docs/configuration
+ */
+
 module.exports = {
-  testEnvironment: 'node',
-  roots: ['<rootDir>/test'],
-  testMatch: ['**/*.test.ts'],
+  verbose: true,
+  injectGlobals: false,
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
-  }
+    "^.+\\.(t|j)sx?$": "ts-jest",
+  },
 };
